@@ -33,7 +33,9 @@ const LandingPage: React.FC = () => {
       behavior: "smooth",
       block: "start",
     });
+
     setNavbarOpen(false);
+
   }, []);
 
   const getDimensions = useCallback((ele: HTMLDivElement) => {
@@ -217,7 +219,7 @@ const LandingPage: React.FC = () => {
       <div
         id="about"
         ref={fieldRefAbout}
-        className="  container mx-auto px-6 md:px-12 block h-full flex flex-col items-center justify-center  py-36 "
+        className=" container mx-auto px-6 md:px-12 block h-full flex flex-col items-center justify-center  py-36 "
       >
         <div className=" flex flex-col text-center justify-center items-center mb-10">
           <Fade direction="left" triggerOnce>
@@ -471,7 +473,7 @@ const LandingPage: React.FC = () => {
 
       {/* Projects */}
       <div
-        id="about"
+        id="projects"
         ref={fieldRefProjects}
         className="bg-gray-100 w-full pt-4"
       >
@@ -770,7 +772,7 @@ const LandingPage: React.FC = () => {
 
               <Bounce delay={800} triggerOnce>
                 <div className="flex flex-col w-full justify-center items-center">
-                  <form className="w-full lg:w-1/3 mt-6 flex flex-col justify-end items-end">
+                  <form className="w-full lg:w-1/3 mt-6 flex flex-col justify-end items-end" action="POST" data-netlify="true">
                     <input
                       id="name"
                       type="text"
@@ -869,7 +871,7 @@ const LandingPage: React.FC = () => {
             </a>
           </div>
 
-          <div className="flex justify-center items-center w-full text-white text-sm">
+          <div className="flex justify-center items-center w-full text-gray-700 text-sm">
             <p>KAIO OLIVEIRA SILVA</p>
             <p className="ml-2 text-pink-600">©2021</p>
           </div>
