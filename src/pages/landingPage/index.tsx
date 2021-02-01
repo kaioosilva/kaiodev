@@ -11,7 +11,7 @@ import { BsChevronDoubleUp } from "react-icons/bs";
 import { ImLinkedin2, ImGithub } from "react-icons/im";
 import kaioProfile from "../../assets/kaioProfile.jpeg";
 import { Fade, Bounce } from "react-awesome-reveal";
-import smoothscroll from 'smoothscroll-polyfill';
+import smoothscroll from "smoothscroll-polyfill";
 
 const LandingPage: React.FC = () => {
   const [arrowReaction, setArrowReaction] = useState(false);
@@ -35,7 +35,6 @@ const LandingPage: React.FC = () => {
     });
 
     setNavbarOpen(false);
-
   }, []);
 
   const getDimensions = useCallback((ele: HTMLDivElement) => {
@@ -91,7 +90,6 @@ const LandingPage: React.FC = () => {
 
   return (
     <>
-      
       {/* Home */}
       <section
         id="home"
@@ -772,7 +770,12 @@ const LandingPage: React.FC = () => {
 
               <Bounce delay={800} triggerOnce>
                 <div className="flex flex-col w-full justify-center items-center">
-                  <form className="w-full lg:w-1/3 mt-6 flex flex-col justify-end items-end" action="POST" data-netlify="true">
+                  <form
+                    name="contact"
+                    method="POST"
+                    data-netlify="true"
+                    className="w-full lg:w-1/3 mt-6 flex flex-col justify-end items-end"
+                  >
                     <input
                       id="name"
                       type="text"
@@ -796,6 +799,7 @@ const LandingPage: React.FC = () => {
                       className=" block w-full p-3 mt-2 text-white bg-gray-900 appearance-none rounded focus:outline-none focus:shadow-inner h-40"
                       id="message"
                       placeholder="Message..."
+                      name="message"
                       required
                     ></textarea>
                     <button
