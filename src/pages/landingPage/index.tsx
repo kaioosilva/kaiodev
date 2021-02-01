@@ -33,7 +33,7 @@ const LandingPage: React.FC = () => {
       behavior: "smooth",
       block: "start",
     });
-
+    setNavbarOpen(false);
   }, []);
 
   const getDimensions = useCallback((ele: HTMLDivElement) => {
