@@ -25,13 +25,6 @@ const LandingPage: React.FC = () => {
   const fieldRefProjects = useRef<null | HTMLDivElement>(null);
   const fieldRefContact = useRef<null | HTMLDivElement>(null);
 
-  const sectionRefs = [
-    { section: "home", ref: fieldRefHome },
-    { section: "about", ref: fieldRefAbout },
-    { section: "projects", ref: fieldRefProjects },
-    { section: "contact", ref: fieldRefContact },
-  ];
-
   const scrollTo = useCallback((ele: HTMLDivElement | null) => {
     ele?.scrollIntoView({
       behavior: "smooth",
@@ -54,6 +47,13 @@ const LandingPage: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
+      const sectionRefs = [
+        { section: "home", ref: fieldRefHome },
+        { section: "about", ref: fieldRefAbout },
+        { section: "projects", ref: fieldRefProjects },
+        { section: "contact", ref: fieldRefContact },
+      ];
+
       if (headerRef.current) {
         const { height: headerHeight } = getDimensions(headerRef.current);
         const scrollPosition = window.scrollY + headerHeight;
@@ -81,7 +81,7 @@ const LandingPage: React.FC = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [visibleSection, getDimensions, sectionRefs]);
+  }, [visibleSection, getDimensions]);
 
   return (
     <>
