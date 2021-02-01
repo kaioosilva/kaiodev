@@ -11,6 +11,7 @@ import { BsChevronDoubleUp } from "react-icons/bs";
 import { ImLinkedin2, ImGithub } from "react-icons/im";
 import kaioProfile from "../../assets/kaioProfile.jpeg";
 import { Fade, Bounce } from "react-awesome-reveal";
+import smoothscroll from 'smoothscroll-polyfill';
 
 const LandingPage: React.FC = () => {
   const [arrowReaction, setArrowReaction] = useState(false);
@@ -24,6 +25,8 @@ const LandingPage: React.FC = () => {
   const fieldRefAbout = useRef<null | HTMLDivElement>(null);
   const fieldRefProjects = useRef<null | HTMLDivElement>(null);
   const fieldRefContact = useRef<null | HTMLDivElement>(null);
+
+  smoothscroll.polyfill();
 
   const scrollTo = useCallback((ele: HTMLDivElement | null) => {
     ele?.scrollIntoView({
@@ -77,6 +80,7 @@ const LandingPage: React.FC = () => {
     };
 
     handleScroll();
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
