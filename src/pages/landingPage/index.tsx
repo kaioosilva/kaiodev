@@ -771,18 +771,15 @@ const LandingPage: React.FC = () => {
               <Bounce delay={800} triggerOnce>
                 <div className="flex flex-col w-full justify-center items-center">
                   <form
-                    name="contact v1"
+                    name="contact"
                     method="post"
                     data-netlify="true"
                     className="w-full lg:w-1/3 mt-6 flex flex-col justify-end items-end"
                     data-netlify-honeypot="bot-field"
+                    action="/contact"
                   >
-                    <input type="hidden" name="form-name" value="contact v1" />
-
-                    <div hidden>
-                      <input name="bot-field" />
-                    </div>
-
+                    <input type="hidden" name="form-name" value="contact" />
+                    
                     <input
                       id="name"
                       type="text"
