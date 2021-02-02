@@ -476,13 +476,13 @@ const LandingPage: React.FC = () => {
         className="bg-gray-100 w-full pt-4"
       >
         <div className="container w-full mx-auto px-6 md:px-12 relative h-full flex flex-col items-center justify-center  py-32 xl:py-40">
-          <div className=" flex flex-col text-center justify-center items-center mb-10">
-            <Fade direction="left" triggerOnce>
+          <div className=" flex flex-col text-center justify-center items-center mb-10 w-full">
+            <Fade direction="right" triggerOnce>
               <h1 className=" uppercase text-3xl lg:text-5xl  pb-4 font-bold">
                 Projects
               </h1>
             </Fade>
-            <Fade direction="left" delay={300} triggerOnce>
+            <Fade direction="right" delay={300} triggerOnce>
               <p>__________</p>
             </Fade>
           </div>
