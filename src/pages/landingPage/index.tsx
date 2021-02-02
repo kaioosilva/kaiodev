@@ -303,7 +303,7 @@ const LandingPage: React.FC = () => {
                   Who's this guy?
                 </span>
                 <span className="text-justify lg:w-96 text-gray-500">
-                  I'm a Front-End Developer for ChowNow in Los Angeles, CA. I
+                  I'm a Full stack Developer based in Dublin, Ireland. I
                   have serious passion for UI effects, animations and creating
                   intuitive, dynamic user experiences.
                 </span>
@@ -569,10 +569,10 @@ const LandingPage: React.FC = () => {
                 <div className="max-w-md mx-auto">
                   <div>
                     <p className="h-7 sm:h-8 font-bold text-primary text-2xl">
-                      GoBarber{" "}
+                      Zoom - clone{" "}
                     </p>
                     <div className="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
-                      <p>The best way to schedule your service!</p>
+                      <p>Project built on JSexpert 2.0</p>
                       <p>Made with:</p>
                       <ul className="list-disc space-y-2">
                         <li className="flex items-start">
@@ -589,7 +589,7 @@ const LandingPage: React.FC = () => {
                               />
                             </svg>
                           </span>
-                          <p className="ml-2">ReactJS</p>
+                          <p className="ml-2">Javascript</p>
                         </li>
                         <li className="flex items-start">
                           <span className="h-6 flex items-center sm:h-7">
@@ -621,15 +621,15 @@ const LandingPage: React.FC = () => {
                               />
                             </svg>
                           </span>
-                          <p className="ml-2">Styled-components</p>
+                          <p className="ml-2">WebRTC</p>
                         </li>
                       </ul>
                     </div>
                     <div className="pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7">
-                      <p>Want to dig deeper into Gobarber?</p>
+                      <p>Want to dig deeper into Zoom-clone?</p>
                       <p>
                         <a
-                          href="https://github.com/kaioosilva/gobarber-web"
+                          href="https://github.com/kaioosilva/zoom-clone"
                           className="text-primary hover:text-primary-dark"
                         >
                           {" "}
@@ -779,7 +779,7 @@ const LandingPage: React.FC = () => {
                     action="/contact"
                   >
                     <input type="hidden" name="form-name" value="contact" />
-                    
+
                     <input
                       id="name"
                       type="text"
