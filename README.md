@@ -21,7 +21,7 @@
 
 </br>
 
-<a href="http://www.kaiodev.com">Live demo</a>
+<a href="http://www.kaiodev.com">Visit the website</a>
 
 </br>
 
