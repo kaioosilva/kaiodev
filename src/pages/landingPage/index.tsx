@@ -230,63 +230,63 @@ const LandingPage: React.FC = () => {
           </Fade>
         </div>
         <div className="flex flex-col lg:flex-row justify-center lg:space-x-32">
-          <div className="flex flex-col justify-center items-center ">
+          <div className="flex flex-col justify-center items-center w-full">
             <Fade direction="left" triggerOnce>
               <div className="flex items-center justify-center text-white rounded-full w-36 bg-primary p-10 ">
                 <GiSpeedometer size={60} />
               </div>
             </Fade>
-
-            <span className="text-gray-600 mt-4 text-3xl mb-2 font-bold">
+            
+            <p className="text-gray-600 mt-4 text-3xl mb-2 font-bold">
               Fast
-            </span>
-            <span className="text-gray-500 ">Fast load times and lag free</span>
-            <span className="text-gray-500">
-              {" "}
-              interaction, my highest priority.
-            </span>
+            </p>
+            <div className="w-full flex justify-center items-center text-center">
+              <p className="text-gray-500 ">Fast load times and lag free 
+                interaction, my highest priority.
+              </p>
+            </div>
           </div>
-          <div className="flex flex-col justify-center items-center mt-6 lg:mt-0">
+          <div className="flex flex-col justify-center items-center mt-6 lg:mt-0 w-full">
             <Fade direction="left" triggerOnce>
               <div className="flex items-center justify-center text-white rounded-full w-36 bg-primary p-10 ">
                 <MdDevices size={60} />
               </div>
             </Fade>
-            <span className="text-gray-600 mt-4 text-3xl mb-2 font-bold">
+            <p className="text-gray-600 mt-4 text-3xl mb-2 font-bold">
               Responsive
-            </span>
-            <span className="text-gray-500 text-1xl">
-              My layouts will work on any
-            </span>
-            <span className="text-gray-500">device, big or small.</span>
+            </p>
+            <div className="w-full flex justify-center items-center text-center">
+              <p className="text-gray-500 text-1xl">
+                My layouts will work on any device, big or small.</p>
+            </div>
           </div>
-          <div className="flex flex-col justify-center items-center mt-6 lg:mt-0">
+          <div className="flex flex-col justify-center items-center mt-6 lg:mt-0 w-full">
             <Fade direction="left" triggerOnce>
               <div className="flex items-center justify-center text-white rounded-full w-36 bg-primary p-10 ">
                 <AiOutlineBulb size={60} />
               </div>
             </Fade>
-            <span className="text-gray-600 mt-4 text-3xl mb-2 font-bold">
+            <p className="text-gray-600 mt-4 text-3xl mb-2 font-bold">
               Intuitive
-            </span>
-            <span className="text-gray-500 text-1xl">
-              Strong preference for easy to
-            </span>
-            <span className="text-gray-500">use, intuitive UX/UI.</span>
+            </p>
+            <div className="w-full flex justify-center items-center text-center">
+              <p className="text-gray-500 text-1xl">
+                Strong preference for easy to use, intuitive UX/UI.</p>
+            </div>
           </div>
-          <div className="flex flex-col justify-center items-center mt-6 lg:mt-0">
+          <div className="flex flex-col justify-center items-center mt-6 lg:mt-0 w-full">
             <Fade direction="left" triggerOnce>
               <div className="flex items-center justify-center text-white rounded-full w-36 bg-primary p-10 ">
                 <IoRocketOutline size={60} />
               </div>
             </Fade>
-            <span className="text-gray-600 mt-4 text-3xl mb-2 font-bold">
+            <p className="text-gray-600 mt-4 text-3xl mb-2 font-bold">
               Dynamic
-            </span>
-            <span className="text-gray-500 text-1xl">
-              Websites don't have to be static, I love
-            </span>
-            <span className="text-gray-500">making pages come to life.</span>
+            </p>
+            <div className="w-full flex justify-center items-center text-center">
+            <p className="text-gray-500 text-1xl">
+              Websites don't have to be static, I love making pages come to life.</p>
+            </div>
           </div>
         </div>
 
