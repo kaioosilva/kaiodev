@@ -554,6 +554,7 @@ const LandingPage: React.FC = () => {
                         <a
                           href="https://github.com/kaioosilva/gobarber-web"
                           className="text-primary hover:text-primary-dark"
+                          title="Gobarbar project on Github"
                         >
                           {" "}
                           Go to Github &rarr;{" "}
@@ -631,6 +632,7 @@ const LandingPage: React.FC = () => {
                         <a
                           href="https://github.com/kaioosilva/zoom-clone"
                           className="text-primary hover:text-primary-dark"
+                          title="Zoom-clone project on github"
                         >
                           {" "}
                           Go to Github &rarr;{" "}
@@ -708,6 +710,7 @@ const LandingPage: React.FC = () => {
                         <a
                           href="https://github.com/kaioosilva/github-explorer"
                           className="text-primary hover:text-primary-dark"
+                          title="Github explorer project on github"
                         >
                           {" "}
                           Go to Github &rarr;{" "}
@@ -839,6 +842,7 @@ const LandingPage: React.FC = () => {
               onMouseEnter={() => setIconsLinkedinReactions(true)}
               onMouseLeave={() => setIconsLinkedinReactions(false)}
               href="https://www.linkedin.com/in/kaio-oliveira-silva-54275b57/"
+              title="Kaio's linkedin profile page"
               className=" flex items-center justify-center w-14 h-14 bg-gray-800 text-white hover:bg-primary cursor-pointer rounded"
             >
               {iconsLinkedinReactions ? (
@@ -853,6 +857,7 @@ const LandingPage: React.FC = () => {
               onMouseEnter={() => setIconsGithubReactions(true)}
               onMouseLeave={() => setIconsGithubReactions(false)}
               href="https://github.com/kaioosilva"
+              title="Kaio's github profile page"
               className="flex items-center justify-center w-14 h-14 bg-gray-800 text-white hover:bg-primary cursor-pointer ml-4 rounded"
             >
               {iconsGithubReactions ? (
@@ -867,6 +872,7 @@ const LandingPage: React.FC = () => {
               onMouseEnter={() => setIconsInstagramReactions(true)}
               onMouseLeave={() => setIconsInstagramReactions(false)}
               href="https://www.instagram.com/kaioo/"
+              title="Kaio's instagram profile page"
               className="flex items-center justify-center w-14 h-14 bg-gray-800 text-white hover:bg-primary cursor-pointer ml-4 rounded"
             >
               {iconsInstagramReactions ? (
