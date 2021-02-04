@@ -1,5 +1,4 @@
 import React, { useState, useRef, useCallback, useEffect } from "react";
-import { Link } from 'react-router-dom';
 import {
   AiOutlineArrowRight,
   AiOutlineBulb,
@@ -552,13 +551,14 @@ const LandingPage: React.FC = () => {
                     <div className="pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7">
                       <p>Want to dig deeper into Gobarber?</p>
                       <p>
-                        <Link
-                          to="https://github.com/kaioosilva/gobarber-web"
+                        <a
+                          href="https://github.com/kaioosilva/gobarber-web"
                           className="text-primary hover:text-primary-dark"
+                          title="Gobarbar project on Github"
                         >
                           {" "}
                           Go to Github &rarr;{" "}
-                        </Link>
+                        </a>
                       </p>
                     </div>
                   </div>
@@ -629,13 +629,14 @@ const LandingPage: React.FC = () => {
                     <div className="pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7">
                       <p>Want to dig deeper into Zoom-clone?</p>
                       <p>
-                        <Link
-                          to="https://github.com/kaioosilva/zoom-clone"
+                        <a
+                          href="https://github.com/kaioosilva/zoom-clone"
                           className="text-primary hover:text-primary-dark"
+                          title="Zoom-clone project on github"
                         >
                           {" "}
                           Go to Github &rarr;{" "}
-                        </Link>
+                        </a>
                       </p>
                     </div>
                   </div>
@@ -706,13 +707,14 @@ const LandingPage: React.FC = () => {
                     <div className="pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7">
                       <p>Want to dig deeper into Github explorer?</p>
                       <p>
-                        <Link
-                          to="https://github.com/kaioosilva/github-explorer"
+                        <a
+                          href="https://github.com/kaioosilva/github-explorer"
                           className="text-primary hover:text-primary-dark"
+                          title="Github explorer project on github"
                         >
                           {" "}
                           Go to Github &rarr;{" "}
-                        </Link>
+                        </a>
                       </p>
                     </div>
                   </div>
@@ -836,10 +838,10 @@ const LandingPage: React.FC = () => {
           </div>
 
           <div className="flex flex-row justify-center items-center w-full mb-10 mt-8">
-            <Link
+            <a
               onMouseEnter={() => setIconsLinkedinReactions(true)}
               onMouseLeave={() => setIconsLinkedinReactions(false)}
-              to="https://www.linkedin.com/in/kaio-oliveira-silva-54275b57/"
+              href="https://www.linkedin.com/in/kaio-oliveira-silva-54275b57/"
               title="Kaio's linkedin profile page"
               className=" flex items-center justify-center w-14 h-14 bg-gray-800 text-white hover:bg-primary cursor-pointer rounded"
             >
@@ -850,11 +852,11 @@ const LandingPage: React.FC = () => {
               ) : (
                 <ImLinkedin2 size={25} />
               )}
-            </Link>
-            <Link
+            </a>
+            <a
               onMouseEnter={() => setIconsGithubReactions(true)}
               onMouseLeave={() => setIconsGithubReactions(false)}
-              to="https://github.com/kaioosilva"
+              href="https://github.com/kaioosilva"
               title="Kaio's github profile page"
               className="flex items-center justify-center w-14 h-14 bg-gray-800 text-white hover:bg-primary cursor-pointer ml-4 rounded"
             >
@@ -865,11 +867,11 @@ const LandingPage: React.FC = () => {
               ) : (
                 <ImGithub size={25} />
               )}
-            </Link>
-            <Link
+            </a>
+            <a
               onMouseEnter={() => setIconsInstagramReactions(true)}
               onMouseLeave={() => setIconsInstagramReactions(false)}
-              to="https://www.instagram.com/kaioo/"
+              href="https://www.instagram.com/kaioo/"
               title="Kaio's instagram profile page"
               className="flex items-center justify-center w-14 h-14 bg-gray-800 text-white hover:bg-primary cursor-pointer ml-4 rounded"
             >
@@ -880,7 +882,7 @@ const LandingPage: React.FC = () => {
               ) : (
                 <AiOutlineInstagram size={25} />
               )}
-            </Link>
+            </a>
           </div>
 
           <div className="flex justify-center items-center w-full text-gray-700 text-sm">
