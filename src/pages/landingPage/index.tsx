@@ -98,7 +98,7 @@ const LandingPage: React.FC = () => {
       >
         <div className="container mx-auto px-6 md:px-12 relative h-full flex flex-col items-center justify-center  py-32 xl:py-40">
           <div className=" flex text-center justify-center items-center text-2xl lg:text-5xl">
-            <p className="text-white mr-2">Hello, I'm</p>
+            <h1 className="text-white mr-2">Hello, I'm</h1>
             <p className="text-pink-600">Kaio Silva</p>
             <p className="text-white">.</p>
           </div>
@@ -296,7 +296,7 @@ const LandingPage: React.FC = () => {
               <div className="flex flex-col justify-center  items-center ">
                 <img
                   src={kaioProfile}
-                  alt={"Kaio Profile"}
+                  alt="Kaiodev Profile"
                   className="rounded-full w-60 lg:w-68"
                 />
                 <span className="text-gray-600 text-2xl mt-4 mb-4 font-bold">
