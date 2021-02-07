@@ -102,7 +102,7 @@ const LandingPage: React.FC = () => {
             <p className="text-pink-600">Kaio Silva</p>
             <p className="text-white">.</p>
           </div>
-          <h1 className="text-white mb-4 text-2xl lg:text-5xl">
+          <h1 className="flex text-center text-white mb-4 text-2xl lg:text-5xl">
             I'm a full-stack web developer.
           </h1>
 
@@ -236,13 +236,11 @@ const LandingPage: React.FC = () => {
                 <GiSpeedometer size={60} />
               </div>
             </Fade>
-            
-            <p className="text-gray-600 mt-4 text-3xl mb-2 font-bold">
-              Fast
-            </p>
+
+            <p className="text-gray-600 mt-4 text-3xl mb-2 font-bold">Fast</p>
             <div className="w-full flex justify-center items-center text-center">
-              <p className="text-gray-500 ">Fast load times and lag free 
-                interaction, my highest priority.
+              <p className="text-gray-500 ">
+                Fast load times and lag free interaction, my highest priority.
               </p>
             </div>
           </div>
@@ -257,7 +255,8 @@ const LandingPage: React.FC = () => {
             </p>
             <div className="w-full flex justify-center items-center text-center">
               <p className="text-gray-500 text-1xl">
-                My layouts will work on any device, big or small.</p>
+                My layouts will work on any device, big or small.
+              </p>
             </div>
           </div>
           <div className="flex flex-col justify-center items-center mt-6 lg:mt-0 w-full">
@@ -271,7 +270,8 @@ const LandingPage: React.FC = () => {
             </p>
             <div className="w-full flex justify-center items-center text-center">
               <p className="text-gray-500 text-1xl">
-                Strong preference for easy to use, intuitive UX/UI.</p>
+                Strong preference for easy to use, intuitive UX/UI.
+              </p>
             </div>
           </div>
           <div className="flex flex-col justify-center items-center mt-6 lg:mt-0 w-full">
@@ -284,8 +284,10 @@ const LandingPage: React.FC = () => {
               Dynamic
             </p>
             <div className="w-full flex justify-center items-center text-center">
-            <p className="text-gray-500 text-1xl">
-              Websites don't have to be static, I love making pages come to life.</p>
+              <p className="text-gray-500 text-1xl">
+                Websites don't have to be static, I love making pages come to
+                life.
+              </p>
             </div>
           </div>
         </div>
@@ -303,8 +305,8 @@ const LandingPage: React.FC = () => {
                   Who's this guy?
                 </span>
                 <span className="text-justify lg:w-96 text-gray-500">
-                  I'm a Full stack Developer based in Dublin, Ireland. I
-                  have serious passion for UI effects, animations and creating
+                  I'm a Full stack Developer based in Dublin, Ireland. I have
+                  serious passion for UI effects, animations and creating
                   intuitive, dynamic user experiences.
                 </span>
                 <button
